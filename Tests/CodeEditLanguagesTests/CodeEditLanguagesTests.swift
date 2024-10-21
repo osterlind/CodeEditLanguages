@@ -422,7 +422,7 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
-    // MARK: - Lua
+// MARK: - Lua
 
     func test_CodeLanguageLua() throws {
         let url = URL(fileURLWithPath: "~/path/to/file.lua")
@@ -440,6 +440,23 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotNil(query)
         XCTAssertNotEqual(query?.patternCount, 0)
     }
+    
+// MARK: - m68k
+
+    func test_CodeLanguageM68kDotAsm() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.asm")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .m68k)
+    }
+
+    func test_CodeLanguageM68kDotS() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.s")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .m68k)
+    }
+    
 // MARK: - Markdown
 
     func test_CodeLanguageMarkdown() throws {
