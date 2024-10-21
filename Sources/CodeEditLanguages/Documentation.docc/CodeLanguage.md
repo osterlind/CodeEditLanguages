@@ -39,6 +39,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - Julia
 - Kotlin
 - Lua
+- m68k Assembly
 - Markdown
 - Objective C
 - OCaml / OCaml Interface
@@ -97,6 +98,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``julia``
 - ``kotlin``
 - ``lua``
+- ``m68k``
 - ``markdown``
 - ``markdownInline``
 - ``objc``
