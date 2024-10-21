@@ -42,6 +42,7 @@ extern TSLanguage *tree_sitter_json();
 extern TSLanguage *tree_sitter_julia();
 extern TSLanguage *tree_sitter_kotlin();
 extern TSLanguage *tree_sitter_lua();
+extern TSLanguage *tree_sitter_m68k();
 extern TSLanguage *tree_sitter_markdown();
 extern TSLanguage *tree_sitter_markdown_inline();
 extern TSLanguage *tree_sitter_objc();

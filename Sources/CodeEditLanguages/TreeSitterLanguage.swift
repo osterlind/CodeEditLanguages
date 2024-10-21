@@ -30,6 +30,7 @@ public enum TreeSitterLanguage: String {
     case julia
     case kotlin
     case lua
+    case m68k
     case markdown
     case markdownInline
     case objc

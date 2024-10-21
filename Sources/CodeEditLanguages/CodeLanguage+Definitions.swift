@@ -34,6 +34,7 @@ public extension CodeLanguage {
         .julia,
         .kotlin,
         .lua,
+        .m68k,
         .markdown,
         .markdownInline,
         .objc,
@@ -53,9 +54,9 @@ public extension CodeLanguage {
         .typescript,
         .verilog,
         .yaml,
-        .zig
+        .zig,
     ]
-
+    
     /// A language structure for `Agda`
     static let agda: CodeLanguage = .init(
         id: .agda,
@@ -255,6 +256,15 @@ public extension CodeLanguage {
         lineCommentString: "--",
         rangeCommentStrings: ("-[[", "]]--"),
         highlights: ["injections"]
+    )
+    
+    /// A language structure for `m68k assembly`
+    static let m68k: CodeLanguage = .init(
+        id: .m68k,
+        tsName: "m68k",
+        extensions: ["asm", "s"],
+        lineCommentString: ";",
+        rangeCommentStrings: ("{-", "-}") // TODO
     )
 
     /// A language structure for `Markdown`

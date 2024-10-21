@@ -190,6 +190,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-m68k",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/osterlind/tree-sitter-m68k",
+      "state" : {
+        "branch" : "feature/spm",
+        "revision" : "41a13e0bbe21996d553288925d6b43bc4c3757a8"
+      }
+    },
+    {
       "identity" : "tree-sitter-markdown",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MDeiml/tree-sitter-markdown",

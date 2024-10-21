@@ -62,6 +62,8 @@ public class TreeSitterModel {
             return kotlinQuery
         case .lua:
             return luaQuery
+        case .m68k:
+            return m68kQuery
         case .markdown:
             return markdownQuery
         case .markdownInline:
@@ -200,6 +202,11 @@ public class TreeSitterModel {
     /// Query for `Lua` files.
     public private(set) lazy var luaQuery: Query? = {
         return queryFor(.lua)
+    }()
+
+    /// Query for `m68k` files.
+    public private(set) lazy var m68kQuery: Query? = {
+        return queryFor(.m68k)
     }()
 
     /// Query for `Markdown` files.
