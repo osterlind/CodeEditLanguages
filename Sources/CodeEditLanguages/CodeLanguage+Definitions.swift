@@ -264,7 +264,7 @@ public extension CodeLanguage {
         tsName: "m68k",
         extensions: ["asm", "s"],
         lineCommentString: ";",
-        rangeCommentStrings: ("{-", "-}") // TODO
+        rangeCommentStrings: ("", "")
     )
 
     /// A language structure for `Markdown`
